@@ -41,6 +41,82 @@ let frog = [
     [0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0]
 ];
 
+let coin = [
+    [0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0],
+    [0,0,0,0,1,5,5,5,5,5,5,1,0,0,0,0],
+    [0,0,0,1,5,5,5,5,5,5,5,5,1,0,0,0],
+    [0,0,1,5,5,5,5,5,5,5,5,5,5,1,0,0],
+    [0,1,5,5,5,5,5,5,5,5,5,5,5,5,1,0],
+    [1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1],
+    [1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1],
+    [1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1],
+    [1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1],
+    [1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1],
+    [1,5,5,5,5,5,5,5,5,5,5,5,5,5,1,0],
+    [0,1,5,5,5,5,5,5,5,5,5,5,5,1,0,0],
+    [0,0,1,5,5,5,5,5,5,5,5,5,1,0,0,0],
+    [0,0,0,1,5,5,5,5,5,5,5,1,0,0,0,0],
+    [0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+];
+
+const cursor = [
+    [0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0],
+    [0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0],
+    [0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0],
+    [0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0],
+    [0,0,0,0,1,0,0,1,0,1,1,1,0,0,0,0],
+    [0,0,0,0,1,0,0,1,0,1,0,1,1,1,0,0],
+    [0,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0],
+    [0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,0],
+    [0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0],
+    [0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0],
+    [0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0],
+    [0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0],
+    [0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0],
+    [0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0],
+    [0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0],
+    [0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0]
+];
+
+const pokeball = [
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0],
+    [0,0,0,0,1,2,2,2,2,1,1,0,0,0,0,0],
+    [0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0],
+    [0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0],
+    [0,0,1,2,2,2,1,1,1,2,2,2,1,0,0,0],
+    [0,0,1,2,2,2,1,0,1,2,2,2,1,0,0,0],
+    [0,0,1,1,1,1,1,0,1,1,1,1,1,0,0,0],
+    [0,0,0,1,0,0,1,1,1,0,0,1,0,0,0,0],
+    [0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0],
+    [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0],
+    [0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+];
+
+let waterDrop = [
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,4,4,4,0,0,0,0,0,0],
+  [0,0,0,0,0,0,4,4,4,4,4,0,0,0,0,0],
+  [0,0,0,0,0,4,4,4,4,4,4,4,0,0,0,0],
+  [0,0,0,0,4,4,4,4,4,4,4,4,4,0,0,0],
+  [0,0,0,4,4,4,4,4,4,4,4,4,4,4,0,0],
+  [0,0,0,4,4,4,4,4,4,4,4,4,4,4,0,0],
+  [0,0,0,4,0,4,4,4,4,4,4,4,4,4,0,0],
+  [0,0,0,4,0,4,4,4,4,4,4,4,4,4,0,0],
+  [0,0,0,4,4,0,0,4,4,4,4,4,4,4,0,0],
+  [0,0,0,4,4,4,4,4,4,4,4,4,4,4,0,0],
+  [0,0,0,0,4,4,4,4,4,4,4,4,4,0,0,0],
+  [0,0,0,0,0,4,4,4,4,4,4,4,0,0,0,0],
+  [0,0,0,0,0,0,0,4,4,4,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] 
+];
+
 function printArt(art){
     let output = "";
     for(let i = 0; i < art.length; i++){
@@ -85,7 +161,7 @@ function colorCounter(art){
 }
 
 /*in this case, symbols are colors*/
-function huffmanEncoding(symbolCount) {
+function huffmanEncoding(symbolCount, options = { log: true }) {
     // === STEP 1: Create the initial leaf nodes ===
     let nodes = [];
     for (let i = 0; i < symbolCount.length; i++) {
@@ -98,7 +174,7 @@ function huffmanEncoding(symbolCount) {
             });
         }
     }
-        console.log("Sorted Initial Nodes:", nodes); // (Optional check)
+    if (options.log) console.log("Sorted Initial Nodes:", nodes); // (Optional check)
     // === STEP 2: Sort them from lowest to highest frequency ===
     nodes.sort((a, b) => a.freq - b.freq);
 
@@ -163,6 +239,96 @@ function huffmanEncoding(symbolCount) {
     // We return the table so we can use it to compress the image array later
     return huffmanLookupTable;
 }
+
+function displayPixelArt(art, title) {
+    const container = document.getElementById('container');
+    
+    const artDiv = document.createElement('div');
+    artDiv.className = 'art-container';
+    
+    const titleEl = document.createElement('div');
+    titleEl.className = 'art-title';
+    titleEl.textContent = title;
+    
+    const grid = document.createElement('div');
+    grid.className = 'pixel-grid';
+    grid.style.gridTemplateColumns = `repeat(${art[0].length}, 24px)`;
+    
+    for (let i = 0; i < art.length; i++) {
+        for (let j = 0; j < art[i].length; j++) {
+            const pixel = document.createElement('div');
+            pixel.className = 'pixel';
+            pixel.style.backgroundColor = colors[art[i][j]];
+            grid.appendChild(pixel);
+        }
+    }
+    
+    const stats = computeCompressionStats(art);
+    const statsBox = document.createElement('div');
+    statsBox.className = 'stats';
+    statsBox.innerHTML = `
+        <div class="stat-row"><span>Pixels</span><strong>${stats.pixelCount}</strong></div>
+        <div class="stat-row"><span>Unique colors</span><strong>${stats.usedColors}</strong></div>
+        <div class="stat-row"><span>Raw size</span><strong>${stats.originalBits} bits</strong></div>
+        <div class="stat-row"><span>Compressed size</span><strong>${stats.compressedBits} bits</strong></div>
+        <div class="stat-row"><span>Saved</span><strong>${stats.savedBits} bits (${stats.bytesSaved} bytes)</strong></div>
+        <div class="stat-row"><span>Compression ratio</span><strong>${stats.compressionRatio}</strong></div>
+        <div class="stat-row"><span>Equivalent pixels saved</span><strong>${stats.pixelsSavedEquivalent}</strong></div>
+    `;
+    
+    artDiv.appendChild(titleEl);
+    artDiv.appendChild(grid);
+    artDiv.appendChild(statsBox);
+    container.appendChild(artDiv);
+}
+
+function computeCompressionStats(art) {
+    const symbolCount = new Array(colors.length).fill(0);
+    let pixelCount = 0;
+
+    for (let i = 0; i < art.length; i++) {
+        for (let j = 0; j < art[i].length; j++) {
+            const symbol = art[i][j];
+            if (symbol >= 0 && symbol < symbolCount.length) {
+                symbolCount[symbol]++;
+                pixelCount++;
+            }
+        }
+    }
+
+    const rawBitsPerPixel = 3;
+    const originalBits = pixelCount * rawBitsPerPixel;
+    const huffmanTable = huffmanEncoding(symbolCount, { log: false });
+
+    let compressedBits = 0;
+    for (let i = 0; i < symbolCount.length; i++) {
+        if (symbolCount[i] > 0) {
+            const code = huffmanTable[colors[i]] || "";
+            compressedBits += symbolCount[i] * code.length;
+        }
+    }
+
+    const savedBits = originalBits - compressedBits;
+    const compressionRatio = originalBits > 0 ? (compressedBits / originalBits).toFixed(3) : "0.000";
+
+    return {
+        pixelCount,
+        usedColors: symbolCount.filter(count => count > 0).length,
+        originalBits,
+        compressedBits,
+        savedBits,
+        compressionRatio,
+        bytesSaved: Math.round(savedBits / 8),
+        pixelsSavedEquivalent: Math.round(savedBits / rawBitsPerPixel)
+    };
+}
+
+displayPixelArt(heart, 'Heart');
+displayPixelArt(frog, 'Frog');
+displayPixelArt(coin, 'Coin');
+displayPixelArt(cursor, 'Cursor');
+displayPixelArt(pokeball, 'Poké Ball');
+displayPixelArt(waterDrop, 'Drop');
 
 
 printArt(heart);
