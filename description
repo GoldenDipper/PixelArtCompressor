@@ -1,1 +1,15 @@
+This project is a web-based pixel art visualization and compression simulator built using HTML, CSS, and JavaScript. It displays multiple 16×16 pixel art designs such as a heart, frog, coin, cursor, Poké Ball, and water drop by representing each pixel as a numbered color value inside two-dimensional arrays. The program dynamically converts these arrays into visual pixel grids using CSS Grid Layout and JavaScript DOM manipulation.
 
+The application also demonstrates the fundamentals of lossless data compression using the Huffman Encoding algorithm. It first analyzes each artwork by counting the frequency of every color used in the image, then constructs a Huffman Tree based on those frequencies to generate optimized binary codes for each color symbol. Using these codes, the program calculates the estimated compressed size of the image and compares it to the original uncompressed size.
+
+For every pixel art image, the program displays detailed compression statistics including:
+
+Total number of pixels
+Number of unique colors used
+Original image size in bits
+Compressed image size in bits
+Total bits and bytes saved
+Compression ratio
+Estimated equivalent pixels saved
+
+The interface is styled with modern CSS features such as shadows, rounded containers, responsive layouts, and organized statistic panels to improve readability and presentation. Overall, the project combines concepts from image representation, data structures, algorithms, and front-end web development to visually demonstrate how Huffman Encoding can reduce storage requirements for pixel-based graphics.
